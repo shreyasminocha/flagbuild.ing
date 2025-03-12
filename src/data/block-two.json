@@ -1,0 +1,102 @@
+[
+  {
+    "country": "The Niger",
+    "iso3166": "ne",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg"
+  },
+  {
+    "country": "Nicaragua",
+    "iso3166": "ni",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg"
+  },
+  {
+    "country": "New Zealand",
+    "iso3166": "nz",
+    "src": ""
+  },
+  {
+    "country": "The Netherlands",
+    "iso3166": "nl",
+    "src": ""
+  },
+  {
+    "country": "Nepal",
+    "iso3166": "np",
+    "src": ""
+  },
+  {
+    "country": "Myanmar",
+    "iso3166": "mm",
+    "src": ""
+  },
+  {
+    "country": "Paraguy",
+    "iso3166": "py",
+    "src": ""
+  },
+  {
+    "country": "Panama",
+    "iso3166": "pa",
+    "src": ""
+  },
+  {
+    "country": "Pakistan",
+    "iso3166": "pk",
+    "src": ""
+  },
+  {
+    "country": "Oman",
+    "iso3166": "om",
+    "src": ""
+  },
+  {
+    "country": "Norway",
+    "iso3166": "no",
+    "src": ""
+  },
+  {
+    "country": "North Macedonia",
+    "iso3166": "mk",
+    "src": ""
+  },
+  {
+    "country": "Nigeria",
+    "iso3166": "ng",
+    "src": ""
+  },
+  {
+    "country": "Rwanda",
+    "iso3166": "rw",
+    "src": ""
+  },
+  {
+    "country": "Russia",
+    "iso3166": "ru",
+    "src": ""
+  },
+  {
+    "country": "Romania",
+    "iso3166": "ro",
+    "src": ""
+  },
+  {
+    "country": "Portugal",
+    "iso3166": "pt",
+    "src": ""
+  },
+  {
+    "country": "Poland",
+    "iso3166": "pl",
+    "src": ""
+  },
+  {
+    "country": "The Philippines",
+    "iso3166": "ph",
+    "src": ""
+  },
+  {
+    "country": "Peru",
+    "iso3166": "pe",
+    "src": ""
+  }
+]

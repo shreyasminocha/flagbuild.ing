@@ -1,0 +1,37 @@
+---
+interface Props {
+    src: string;
+    country: string;
+    link: string;
+    vertical?: boolean;
+}
+
+const { src, country, link, vertical } = Astro.props;
+---
+
+<figure>
+    <a href={link}
+        ><img
+            {src}
+            alt={`Flag of ${country}`}
+            title={country}
+            class:list={[vertical ? "vertical" : "horizontal"]}
+        /></a
+    >
+</figure>
+
+<style>
+    img {
+        width: 5rem;
+    }
+
+    figure {
+        width: 5rem;
+        /* padding: 1rem; */
+    }
+
+    .vertical {
+        transform-origin: left top;
+        transform: scaleY(-1) rotate(-90deg);
+    }
+</style>

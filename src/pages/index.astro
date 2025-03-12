@@ -1,0 +1,83 @@
+---
+import Base from "@layouts/Base.astro";
+import Flag from "@components/Flag.astro";
+
+import BLOCK_ONE from "@data/block-one.json";
+import BLOCK_TWO from "@data/block-two.json";
+
+interface FlagSpec {
+  country: string;
+  iso3166: string;
+  src: string;
+}
+---
+
+<Base
+  title="Flag Building"
+  description="An attempt at a replica of the flag arrangement in the Flag Building at Georgia Tech."
+>
+  <marquee>⚠️ Work In Progress! ⚠️</marquee>
+
+  <div class:list={["blocks"]}>
+    <ol>
+      {
+        (BLOCK_ONE as FlagSpec[]).map(({ src, country, iso3166 }) => (
+          <li id={iso3166}>
+            <Flag
+              {src}
+              {country}
+              link={`https://en.wikipedia.org/wiki/${country}`}
+              vertical
+            />
+          </li>
+        ))
+      }
+    </ol>
+
+    <ol>
+      {
+        (BLOCK_TWO as FlagSpec[]).map(({ src, country, iso3166 }) => (
+          <li id={iso3166}>
+            <Flag
+              {src}
+              {country}
+              link={`https://en.wikipedia.org/wiki/${country}`}
+            />
+          </li>
+        ))
+      }
+    </ol>
+  </div>
+</Base>
+
+<style>
+  body {
+    margin: 2rem 5rem;
+    background: #eee;
+  }
+
+  .blocks {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+  }
+
+  ol {
+    padding-left: 0;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(6, 5rem);
+    grid-row-gap: 1rem;
+    grid-column-gap: 0.5rem;
+  }
+
+  li {
+    list-style: none;
+    height: 5rem;
+  }
+
+  #us {
+    grid-column: 0 / span 6;
+    margin: 0 auto;
+  }
+</style>
