@@ -68,17 +68,23 @@ interface FlagSpec {
     }
   }
 
-  #block-two {
-    grid-column-gap: 5px;
-  }
-
   ol {
     padding-left: 0;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(6, 5rem);
     grid-row-gap: 1rem;
     grid-column-gap: 0;
+  }
+
+  #block-one {
+    grid-template-columns: repeat(6, 5rem);
+  }
+
+  #block-two {
+    grid-template-columns: repeat(7, 6rem);
+    grid-template-rows: repeat(auto-fit, 4rem);
+    grid-column-gap: 0;
+    grid-row-gap: 0;
   }
 
   li {
