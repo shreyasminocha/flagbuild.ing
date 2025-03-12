@@ -19,7 +19,7 @@ interface FlagSpec {
   <marquee>⚠️ Work In Progress! ⚠️</marquee>
 
   <div class:list={["blocks"]}>
-    <ol>
+    <ol id="block-one">
       {
         (BLOCK_ONE as FlagSpec[]).map(({ src, country, iso3166 }) => (
           <li id={iso3166}>
@@ -34,7 +34,7 @@ interface FlagSpec {
       }
     </ol>
 
-    <ol>
+    <ol id="block-two">
       {
         (BLOCK_TWO as FlagSpec[]).map(({ src, country, iso3166 }) => (
           <li id={iso3166}>
@@ -52,7 +52,7 @@ interface FlagSpec {
 
 <style>
   body {
-    margin: 2rem 5rem;
+    margin: 2rem 2rem;
     background: #eee;
   }
 
@@ -62,13 +62,23 @@ interface FlagSpec {
     gap: 5rem;
   }
 
+  @media screen and (min-width: 1280px) {
+    .blocks {
+      flex-direction: row;
+    }
+  }
+
+  #block-two {
+    grid-column-gap: 5px;
+  }
+
   ol {
     padding-left: 0;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 5rem);
     grid-row-gap: 1rem;
-    grid-column-gap: 0.5rem;
+    grid-column-gap: 0;
   }
 
   li {
@@ -77,7 +87,7 @@ interface FlagSpec {
   }
 
   #us {
-    grid-column: 0 / span 6;
+    grid-column: span 6;
     margin: 0 auto;
   }
 </style>
