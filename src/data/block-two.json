@@ -98,5 +98,175 @@
     "country": "Peru",
     "iso3166": "pe",
     "src": ""
+  },
+  {
+    "country": "Slovenia",
+    "iso3166": "si",
+    "src": ""
+  },
+  {
+    "country": "Slovakia",
+    "iso3166": "sk",
+    "src": ""
+  },
+  {
+    "country": "Singapore",
+    "iso3166": "sg",
+    "src": ""
+  },
+  {
+    "country": "Serbia",
+    "iso3166": "rs",
+    "src": ""
+  },
+  {
+    "country": "Senegal",
+    "iso3166": "sn",
+    "src": ""
+  },
+  {
+    "country": "Saudi Arabia",
+    "iso3166": "sa",
+    "src": ""
+  },
+  {
+    "country": "Saint Lucia",
+    "iso3166": "lc",
+    "src": ""
+  },
+  {
+    "country": "Switzerland",
+    "iso3166": "ch",
+    "src": ""
+  },
+  {
+    "country": "Sweden",
+    "iso3166": "se",
+    "src": ""
+  },
+  {
+    "country": "Sudan",
+    "iso3166": "sd",
+    "src": ""
+  },
+  {
+    "country": "Sri Lanka",
+    "iso3166": "lk",
+    "src": ""
+  },
+  {
+    "country": "Spain",
+    "iso3166": "es",
+    "src": ""
+  },
+  {
+    "country": "South Korea",
+    "iso3166": "kr",
+    "src": ""
+  },
+  {
+    "country": "South Africa",
+    "iso3166": "za",
+    "src": ""
+  },
+  {
+    "country": "Tunisia",
+    "iso3166": "tn",
+    "src": ""
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "iso3166": "tt",
+    "src": ""
+  },
+  {
+    "country": "Togo",
+    "iso3166": "tg",
+    "src": ""
+  },
+  {
+    "country": "Thailand",
+    "iso3166": "th",
+    "src": ""
+  },
+  {
+    "country": "Tanzania",
+    "iso3166": "tz",
+    "src": ""
+  },
+  {
+    "country": "Taiwan",
+    "iso3166": "tw",
+    "src": ""
+  },
+  {
+    "country": "Syria",
+    "iso3166": "sy",
+    "src": ""
+  },
+  {
+    "country": "United Kingdom",
+    "iso3166": "gb",
+    "src": ""
+  },
+  {
+    "country": "United Arab Emirates",
+    "iso3166": "ae",
+    "src": ""
+  },
+  {
+    "country": "Ukraine",
+    "iso3166": "ua",
+    "src": ""
+  },
+  {
+    "country": "Uganda",
+    "iso3166": "ug",
+    "src": ""
+  },
+  {
+    "country": "Turks and Caicos Islands",
+    "iso3166": "tc",
+    "src": ""
+  },
+  {
+    "country": "Turkmenistan",
+    "iso3166": "tm",
+    "src": ""
+  },
+  {
+    "country": "Turkey",
+    "iso3166": "tr",
+    "src": ""
+  },
+  {
+    "country": "Zimbabwe",
+    "iso3166": "zw",
+    "src": ""
+  },
+  {
+    "country": "Zambia",
+    "iso3166": "zm",
+    "src": ""
+  },
+  {
+    "country": "Yemen",
+    "iso3166": "ye",
+    "src": ""
+  },
+  {
+    "country": "Vietnam",
+    "iso3166": "vn",
+    "src": ""
+  },
+  {
+    "country": "Venezuela",
+    "iso3166": "ve",
+    "src": ""
+  },
+  {
+    "country": "Uzbekistan",
+    "iso3166": "uz",
+    "src": ""
   }
 ]
