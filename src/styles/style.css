@@ -3,7 +3,7 @@
 }
 
 :root {
-  --background-color: white;
+  --background-color: #eee;
   --body-color: hsl(0, 0%, 40%);
 }
 
@@ -15,26 +15,19 @@
 }
 
 body {
-  font-size: 1rem;
-  color: var(--body-color);
-  font-family: var(--body-font);
-  background-color: var(--background-color);
-  line-height: 1.35;
   width: 95%;
-  margin: 0 auto;
-  max-width: 570px;
+  margin: 2rem 2rem;
+  font-size: 1rem;
+  line-height: 1.35;
+  font-family: var(--body-font);
+  color: var(--body-color);
+  background-color: var(--background-color);
   font-variant-ligatures: common-ligatures no-discretionary-ligatures
     no-historical-ligatures contextual;
 }
 
-@media (min-width: 500px) {
-  body {
-    font-size: 1.125rem;
-  }
-}
-
-@media (min-width: 760px) {
-  body {
-    width: 100%;
-  }
+header,
+footer {
+  margin: 2rem auto;
+  text-align: center;
 }

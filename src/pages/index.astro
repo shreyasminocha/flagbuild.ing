@@ -16,7 +16,9 @@ interface FlagSpec {
   title="Flag Building"
   description="An attempt at a replica of the flag arrangement in the Flag Building at Georgia Tech."
 >
-  <marquee>⚠️ Work In Progress! ⚠️</marquee>
+  <header>
+    <marquee width="500">⚠️ Work In Progress! ⚠️</marquee>
+  </header>
 
   <div class:list={["blocks"]}>
     <ol id="block-one">
@@ -48,14 +50,11 @@ interface FlagSpec {
       }
     </ol>
   </div>
+
+  <footer>Flag data last updated (manually) in September 2024.</footer>
 </Base>
 
 <style>
-  body {
-    margin: 2rem 2rem;
-    background: #eee;
-  }
-
   .blocks {
     display: flex;
     flex-direction: column;
