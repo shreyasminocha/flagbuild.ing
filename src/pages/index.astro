@@ -9,7 +9,10 @@ interface FlagSpec {
   country: string;
   iso3166: string;
   src: string;
+  note: string | undefined;
 }
+
+let footnoteNumber = 1;
 ---
 
 <Base
@@ -23,33 +26,52 @@ interface FlagSpec {
   <div class:list={["blocks"]}>
     <ol id="block-one">
       {
-        (BLOCK_ONE as FlagSpec[]).map(({ src, country, iso3166 }) => (
-          <li id={iso3166}>
-            <Flag
-              {src}
-              {country}
-              link={`https://en.wikipedia.org/wiki/${country}`}
-              vertical
-            />
-          </li>
-        ))
+        (BLOCK_ONE as FlagSpec[]).map(({ src, country, iso3166, note }) => {
+          return (
+            <li id={iso3166}>
+              <Flag
+                {src}
+                {country}
+                link={`https://en.wikipedia.org/wiki/${country.replaceAll(" ", "_")}`}
+                vertical
+              />
+              {note && <sup>{footnoteNumber++}</sup>}
+            </li>
+          );
+        })
       }
     </ol>
 
     <ol id="block-two">
       {
-        (BLOCK_TWO as FlagSpec[]).map(({ src, country, iso3166 }) => (
-          <li id={iso3166}>
-            <Flag
-              {src}
-              {country}
-              link={`https://en.wikipedia.org/wiki/${country}`}
-            />
-          </li>
-        ))
+        (BLOCK_TWO as FlagSpec[]).map(({ src, country, iso3166, note }) => {
+          return (
+            <li id={iso3166}>
+              <Flag
+                {src}
+                {country}
+                link={`https://en.wikipedia.org/wiki/${country}`}
+              />
+              {note && <sup>{footnoteNumber++}</sup>}
+            </li>
+          );
+        })
       }
     </ol>
   </div>
+
+  <ol>
+    {
+      (BLOCK_ONE as FlagSpec[])
+        .filter((flag) => flag.note !== undefined)
+        .map(({ note }) => <li>{note}</li>)
+    }
+    {
+      (BLOCK_TWO as FlagSpec[])
+        .filter((flag) => flag.note !== undefined)
+        .map(({ note }) => <li>{note}</li>)
+    }
+  </ol>
 
   <footer>
     <a href="https://github.com/shreyasminocha/flagbuild.ing">Flag data</a> last
@@ -72,7 +94,7 @@ interface FlagSpec {
     }
   }
 
-  ol {
+  .blocks ol {
     padding-left: 0;
     margin: 0 auto;
     display: grid;
@@ -91,7 +113,7 @@ interface FlagSpec {
     grid-row-gap: 0;
   }
 
-  li {
+  .blocks li {
     list-style: none;
     height: 5rem;
   }

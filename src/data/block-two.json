@@ -32,7 +32,8 @@
   {
     "country": "Paraguay",
     "iso3166": "py",
-    "src": ""
+    "src": "",
+    "note": "TODO (Not the current national flag)"
   },
   {
     "country": "Panama",
@@ -97,7 +98,8 @@
   {
     "country": "Peru",
     "iso3166": "pe",
-    "src": ""
+    "src": "",
+    "note": "TODO (Not the current national flag)"
   },
   {
     "country": "Slovenia",
@@ -132,12 +134,14 @@
   {
     "country": "Saint Lucia",
     "iso3166": "lc",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Saint_Lucia_%281979%E2%80%932002%29.svg"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/ea/Flag_of_Saint_Lucia_%281979%E2%80%932002%29.svg",
+    "note": "Old flag (1979–2002)"
   },
   {
     "country": "Switzerland",
     "iso3166": "ch",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/9/92/Civil_Ensign_of_Switzerland_%28Pantone%29.svg"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/92/Civil_Ensign_of_Switzerland_%28Pantone%29.svg",
+    "note": "Civil and state ensign instead of the national flag"
   },
   {
     "country": "Sweden",
@@ -252,7 +256,8 @@
   {
     "country": "Yemen",
     "iso3166": "ye",
-    "src": "https://en.wikipedia.org/wiki/Yemen#/media/File:Flag_of_Yemen.svg"
+    "src": "https://en.wikipedia.org/wiki/Yemen#/media/File:Flag_of_Yemen.svg",
+    "note": "TODO (Not the current national flag)"
   },
   {
     "country": "Vietnam",
@@ -262,7 +267,8 @@
   {
     "country": "Venezuela",
     "iso3166": "ve",
-    "src": ""
+    "src": "",
+    "note": "TODO (Not the current national flag)"
   },
   {
     "country": "Uzbekistan",
