@@ -12,6 +12,10 @@ interface FlagSpec {
   note: string | undefined;
 }
 
+function wikipediaLink(country: string): string {
+  return `https://en.wikipedia.org/wiki/${country.replaceAll(" ", "_")}`;
+}
+
 let footnoteNumber = 1;
 ---
 
@@ -20,7 +24,19 @@ let footnoteNumber = 1;
   description="Unofficial catalogue of the flags in the Flag Building at Georgia Tech."
 >
   <header>
-    <marquee width="500">⚠️ Work In Progress! ⚠️</marquee>
+    <h1>
+      <a
+        href="https://maps.google.com/maps/place/Flag+Building+(Smithgall+Student+Services+Building)/@33.7742903,-84.3995066,19z/data=!4m6!3m5!1s0x88f50489132cce95:0x4410149dbd9c73d1!8m2!3d33.7744069!4d-84.3996194!16s%2Fg%2F11_sndyyg"
+        >Flag Building</a
+      >
+    </h1>
+
+    <a href="https://github.com/shreyasminocha/flagbuild.ing">Flag data</a> last
+    updated (manually) in September 2024.
+
+    <p>
+      <marquee width="500">⚠️ Work In Progress! ⚠️</marquee>
+    </p>
   </header>
 
   <div class:list={["blocks"]}>
@@ -29,12 +45,7 @@ let footnoteNumber = 1;
         (BLOCK_ONE as FlagSpec[]).map(({ src, country, iso3166, note }) => {
           return (
             <li id={iso3166}>
-              <Flag
-                {src}
-                {country}
-                link={`https://en.wikipedia.org/wiki/${country.replaceAll(" ", "_")}`}
-                vertical
-              />
+              <Flag {src} {country} link={wikipediaLink(country)} vertical />
               {note && <sup>{footnoteNumber++}</sup>}
             </li>
           );
@@ -47,11 +58,7 @@ let footnoteNumber = 1;
         (BLOCK_TWO as FlagSpec[]).map(({ src, country, iso3166, note }) => {
           return (
             <li id={iso3166}>
-              <Flag
-                {src}
-                {country}
-                link={`https://en.wikipedia.org/wiki/${country}`}
-              />
+              <Flag {src} {country} link={wikipediaLink(country)} />
               {note && <sup>{footnoteNumber++}</sup>}
             </li>
           );
@@ -64,22 +71,29 @@ let footnoteNumber = 1;
     {
       (BLOCK_ONE as FlagSpec[])
         .filter((flag) => flag.note !== undefined)
-        .map(({ note }) => <li>{note}</li>)
+        .map(({ country, note }) => (
+          <li>
+            <a href={wikipediaLink(country)}>{country}</a>: {note}
+          </li>
+        ))
     }
     {
       (BLOCK_TWO as FlagSpec[])
         .filter((flag) => flag.note !== undefined)
-        .map(({ note }) => <li>{note}</li>)
+        .map(({ country, note }) => (
+          <li>
+            <a href={wikipediaLink(country)}>{country}</a>: {note}
+          </li>
+        ))
     }
   </ol>
-
-  <footer>
-    <a href="https://github.com/shreyasminocha/flagbuild.ing">Flag data</a> last
-    updated (manually) in September 2024.
-  </footer>
 </Base>
 
 <style>
+  h1 a {
+    text-decoration: none;
+  }
+
   .blocks {
     display: flex;
     max-width: 1200px;
