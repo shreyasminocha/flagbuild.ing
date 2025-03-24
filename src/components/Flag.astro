@@ -3,13 +3,12 @@ interface Props {
   src: string;
   country: string;
   link: string;
-  vertical?: boolean;
 }
 
-const { src, country, link, vertical } = Astro.props;
+const { src, country, link } = Astro.props;
 ---
 
-<figure class:list={[vertical ? "vertical" : "horizontal"]}>
+<figure>
   <a href={link}><img {src} alt={`Flag of ${country}`} title={country} /></a>
 </figure>
 
@@ -26,10 +25,5 @@ const { src, country, link, vertical } = Astro.props;
 
   a {
     display: block;
-  }
-
-  .vertical {
-    transform-origin: top left;
-    transform: rotate(90deg);
   }
 </style>

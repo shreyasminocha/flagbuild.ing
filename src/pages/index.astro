@@ -41,7 +41,7 @@ let footnoteNumber = 1;
         (BLOCK_ONE as FlagSpec[]).map(({ src, country, iso3166, note }) => {
           return (
             <li id={iso3166}>
-              <Flag {src} {country} link={wikipediaLink(country)} vertical />
+              <Flag {src} {country} link={wikipediaLink(country)} />
               {note && <sup>{footnoteNumber++}</sup>}
             </li>
           );
@@ -102,6 +102,11 @@ let footnoteNumber = 1;
     .blocks {
       flex-direction: row;
     }
+
+    ol#block-one {
+      margin: 0 -5rem 0 5rem; /* compensates for flag rotation */
+      padding-left: 0;
+    }
   }
 
   .blocks ol {
@@ -114,6 +119,7 @@ let footnoteNumber = 1;
 
   #block-one {
     grid-template-columns: repeat(6, 5rem);
+    padding-left: 5rem; /* compensates for flag rotation */
   }
 
   #block-two {
@@ -126,6 +132,11 @@ let footnoteNumber = 1;
   .blocks li {
     list-style: none;
     height: 5rem;
+  }
+
+  #block-one li {
+    transform-origin: top left;
+    transform: rotate(90deg);
   }
 
   #us {
