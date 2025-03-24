@@ -117,24 +117,28 @@ let footnoteNumber = 1;
     grid-column-gap: 0;
   }
 
-  #block-one {
-    grid-template-columns: repeat(6, 5rem);
-    padding-left: 5rem; /* compensates for flag rotation */
-  }
-
-  #block-two {
-    grid-template-columns: repeat(7, 6rem);
-    grid-template-rows: repeat(auto-fit, 4rem);
-    grid-column-gap: 0;
-    grid-row-gap: 0;
-  }
-
   .blocks li {
     list-style: none;
     height: 5rem;
   }
 
-  #block-one li {
+  #block-one,
+  #block-two {
+    padding-left: 5rem; /* compensates for flag rotation */
+  }
+
+  #block-one {
+    grid-template-columns: repeat(6, 5rem);
+  }
+
+  #block-two {
+    grid-template-columns: repeat(7, 5rem);
+    grid-template-rows: repeat(auto-fit, 5rem);
+  }
+
+  #block-one :global(figure),
+  #block-two :global(figure) {
+    display: inline-block;
     transform-origin: top left;
     transform: rotate(90deg);
   }
@@ -149,8 +153,10 @@ let footnoteNumber = 1;
     transform: scale(0.8);
   }
 
-  #np {
-    transform-origin: left top;
-    transform: scaleY(-1) scale(0.65) rotate(-90deg);
+  #np :global(figure) {
+    transform-origin: bottom left;
+    transform: scaleY(-1) scale(0.7) rotate(-90deg);
+    position: relative;
+    top: -6rem; /* jank */
   }
 </style>
