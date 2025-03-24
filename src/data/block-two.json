@@ -1,15 +1,5 @@
 [
   {
-    "country": "The Niger",
-    "iso3166": "ne",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg"
-  },
-  {
-    "country": "Nicaragua",
-    "iso3166": "ni",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg"
-  },
-  {
     "country": "New Zealand",
     "iso3166": "nz",
     "src": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg"
@@ -30,15 +20,19 @@
     "src": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Flag_of_Myanmar.svg"
   },
   {
-    "country": "Paraguay",
-    "iso3166": "py",
-    "src": "",
-    "note": "TODO (Not the current national flag)"
+    "country": "Morocco",
+    "iso3166": "ma",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/2/2c/Flag_of_Morocco.svg"
   },
   {
-    "country": "Panama",
-    "iso3166": "pa",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"
+    "country": "Mongolia",
+    "iso3166": "mn",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/4c/Flag_of_Mongolia.svg"
+  },
+  {
+    "country": "Mexico",
+    "iso3166": "mx",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Flag_of_Mexico.svg"
   },
   {
     "country": "Pakistan",
@@ -66,19 +60,14 @@
     "src": "https://upload.wikimedia.org/wikipedia/commons/7/79/Flag_of_Nigeria.svg"
   },
   {
-    "country": "Rwanda",
-    "iso3166": "rw",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg"
+    "country": "The Niger",
+    "iso3166": "ne",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Flag_of_Niger.svg"
   },
   {
-    "country": "Russia",
-    "iso3166": "ru",
-    "src": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg"
-  },
-  {
-    "country": "Romania",
-    "iso3166": "ro",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg"
+    "country": "Nicaragua",
+    "iso3166": "ni",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/19/Flag_of_Nicaragua.svg"
   },
   {
     "country": "Portugal",
@@ -98,23 +87,24 @@
   {
     "country": "Peru",
     "iso3166": "pe",
-    "src": "",
-    "note": "TODO (Not the current national flag)"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/d/df/Flag_of_Peru_%28state%29.svg",
+    "note": "State flag and state/naval ensign instead of the civil flag"
   },
   {
-    "country": "Slovenia",
-    "iso3166": "si",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg"
+    "country": "Paraguay",
+    "iso3166": "py",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/ec/Flag_of_Paraguay_%281990%E2%80%932013%29.svg",
+    "note": "Old national flag (1990–2013). Front side shown."
   },
   {
-    "country": "Slovakia",
-    "iso3166": "sk",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg"
+    "country": "Panama",
+    "iso3166": "pa",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/ab/Flag_of_Panama.svg"
   },
   {
-    "country": "Singapore",
-    "iso3166": "sg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg"
+    "country": "Palestine",
+    "iso3166": "ps",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/00/Flag_of_Palestine.svg"
   },
   {
     "country": "Serbia",
@@ -138,20 +128,19 @@
     "note": "Old flag (1979–2002)"
   },
   {
-    "country": "Switzerland",
-    "iso3166": "ch",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/9/92/Civil_Ensign_of_Switzerland_%28Pantone%29.svg",
-    "note": "Civil and state ensign instead of the national flag"
+    "country": "Rwanda",
+    "iso3166": "rw",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/1/17/Flag_of_Rwanda.svg"
   },
   {
-    "country": "Sweden",
-    "iso3166": "se",
-    "src": "https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg"
+    "country": "Russia",
+    "iso3166": "ru",
+    "src": "https://upload.wikimedia.org/wikipedia/en/f/f3/Flag_of_Russia.svg"
   },
   {
-    "country": "Sudan",
-    "iso3166": "sd",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg"
+    "country": "Romania",
+    "iso3166": "ro",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/73/Flag_of_Romania.svg"
   },
   {
     "country": "Sri Lanka",
@@ -174,19 +163,19 @@
     "src": "https://upload.wikimedia.org/wikipedia/commons/a/af/Flag_of_South_Africa.svg"
   },
   {
-    "country": "Tunisia",
-    "iso3166": "tn",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg"
+    "country": "Slovenia",
+    "iso3166": "si",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/f/f0/Flag_of_Slovenia.svg"
   },
   {
-    "country": "Trinidad and Tobago",
-    "iso3166": "tt",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg"
+    "country": "Slovakia",
+    "iso3166": "sk",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/e/e6/Flag_of_Slovakia.svg"
   },
   {
-    "country": "Togo",
-    "iso3166": "tg",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Togo.svg"
+    "country": "Singapore",
+    "iso3166": "sg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/4/48/Flag_of_Singapore.svg"
   },
   {
     "country": "Thailand",
@@ -209,14 +198,20 @@
     "src": "https://upload.wikimedia.org/wikipedia/commons/1/14/Flag_of_the_Syrian_revolution.svg"
   },
   {
-    "country": "United Kingdom",
-    "iso3166": "gb",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg"
+    "country": "Switzerland",
+    "iso3166": "ch",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/9/92/Civil_Ensign_of_Switzerland_%28Pantone%29.svg",
+    "note": "Civil and state ensign instead of the national flag"
   },
   {
-    "country": "United Arab Emirates",
-    "iso3166": "ae",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/c/cb/Flag_of_the_United_Arab_Emirates.svg"
+    "country": "Sweden",
+    "iso3166": "se",
+    "src": "https://upload.wikimedia.org/wikipedia/en/4/4c/Flag_of_Sweden.svg"
+  },
+  {
+    "country": "Sudan",
+    "iso3166": "sd",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/0/01/Flag_of_Sudan.svg"
   },
   {
     "country": "Ukraine",
@@ -234,14 +229,29 @@
     "src": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Flag_of_the_Turks_and_Caicos_Islands.svg"
   },
   {
-    "country": "Turkmenistan",
-    "iso3166": "tm",
-    "src": "https://upload.wikimedia.org/wikipedia/commons/1/1b/Flag_of_Turkmenistan.svg"
-  },
-  {
     "country": "Türkiye",
     "iso3166": "tr",
     "src": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Flag_of_Turkey.svg"
+  },
+  {
+    "country": "Tunisia",
+    "iso3166": "tn",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Flag_of_Tunisia.svg"
+  },
+  {
+    "country": "Trinidad and Tobago",
+    "iso3166": "tt",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/64/Flag_of_Trinidad_and_Tobago.svg"
+  },
+  {
+    "country": "Togo",
+    "iso3166": "tg",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/6/68/Flag_of_Togo.svg"
+  },
+  {
+    "country": "United Kingdom",
+    "iso3166": "gb",
+    "src": "https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg"
   },
   {
     "country": "Zimbabwe",
@@ -266,8 +276,8 @@
   {
     "country": "Venezuela",
     "iso3166": "ve",
-    "src": "",
-    "note": "TODO (Not the current national flag)"
+    "src": "https://upload.wikimedia.org/wikipedia/commons/7/7b/Flag_of_Venezuela_%28state%29.svg",
+    "note": "State/war flag and naval ensign instead of the national flag"
   },
   {
     "country": "Uzbekistan",

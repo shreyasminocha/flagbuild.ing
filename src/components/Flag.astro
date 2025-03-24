@@ -9,15 +9,8 @@ interface Props {
 const { src, country, link, vertical } = Astro.props;
 ---
 
-<figure>
-  <a href={link}
-    ><img
-      {src}
-      alt={`Flag of ${country}`}
-      title={country}
-      class:list={[vertical ? "vertical" : "horizontal"]}
-    /></a
-  >
+<figure class:list={[vertical ? "vertical" : "horizontal"]}>
+  <a href={link}><img {src} alt={`Flag of ${country}`} title={country} /></a>
 </figure>
 
 <style>
@@ -36,7 +29,7 @@ const { src, country, link, vertical } = Astro.props;
   }
 
   .vertical {
-    transform-origin: left top;
-    transform: scaleY(-1) rotate(-90deg);
+    transform-origin: top left;
+    transform: rotate(90deg);
   }
 </style>
